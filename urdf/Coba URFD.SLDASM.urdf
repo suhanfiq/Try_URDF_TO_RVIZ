@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Coba URFD.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0059212 0.012235 0.039172"
+        rpy="0 0 0" />
+      <mass
+        value="0.025129" />
+      <inertia
+        ixx="5.4435E-06"
+        ixy="-1.63E-22"
+        ixz="2.7387E-22"
+        iyy="1.0459E-05"
+        iyz="-7.5246E-23"
+        izz="5.4435E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 0.045 -3.4694E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.12387" />
+      <inertia
+        ixx="8.4712E-05"
+        ixy="2.6019E-21"
+        ixz="-1.6941E-21"
+        iyy="3.0331E-05"
+        iyz="-2.8145E-21"
+        izz="8.4712E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Join1"
+    type="revolute">
+    <origin
+      xyz="-0.0059212 -0.039172 0.012202"
+      rpy="1.5708 0 -1.4891" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.54"
+      upper="1.54"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="-0.027292 0.044487 0.041058"
+        rpy="0 0 0" />
+      <mass
+        value="0.12387" />
+      <inertia
+        ixx="8.4712E-05"
+        ixy="-1.8211E-20"
+        ixz="-1.6941E-21"
+        iyy="3.0331E-05"
+        iyz="2.7264E-20"
+        izz="8.4712E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0.013846 0.12207 0.081929"
+      rpy="-0.0058508 0.059124 0.074256" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.54"
+      upper="1.54"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="-0.026472 0.045 0.019395"
+        rpy="0 0 0" />
+      <mass
+        value="0.12387" />
+      <inertia
+        ixx="8.4712E-05"
+        ixy="5.5057E-21"
+        ixz="0"
+        iyy="3.0331E-05"
+        iyz="5.4197E-20"
+        izz="8.4712E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="-0.054105 0.083399 0.054003"
+      rpy="1.5738 0.078148 -3.1037" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0.037797 0 -0.99929" />
+    <limit
+      lower="-1.54"
+      upper="1.54"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="End">
+    <inertial>
+      <origin
+        xyz="-0.020955 0.0021193 0.016384"
+        rpy="0 0 0" />
+      <mass
+        value="0.025437" />
+      <inertia
+        ixx="1.8251E-05"
+        ixy="5.7144E-12"
+        ixz="-1.6789E-11"
+        iyy="7.1467E-06"
+        iyz="4.9147E-14"
+        izz="2.4174E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/End.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba URFD.SLDASM/meshes/End.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="End1"
+    type="revolute">
+    <origin
+      xyz="-0.005517 0.11363 0.003011"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="End" />
+    <axis
+      xyz="0.037797 0 -0.99929" />
+    <limit
+      lower="-1.54"
+      upper="1.54"
+      effort="10"
+      velocity="100" />
+  </joint>
+</robot>
